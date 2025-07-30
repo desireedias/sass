@@ -1,0 +1,12 @@
+@use 'variaveis';
+
+@media screen and (max-width: variaveis.$tablet){
+    .container{
+        max-width: 90%;;
+    }
+
+    .products{
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+}

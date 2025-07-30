@@ -1,0 +1,10 @@
+@use 'variaveis';
+
+
+@media screen and (max-width: variaveis.$mobile) {
+    .products{
+        display: block;
+        margin-top: 2em;
+
+    }
+}
