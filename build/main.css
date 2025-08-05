@@ -5,21 +5,6 @@
   font-family: "Roboto", "san-serif";
 }
 
-@media screen and (max-width: 767px) {
-  .products {
-    display: block;
-    margin-top: 2em;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .container {
-    max-width: 90%;
-  }
-  .products {
-    grid-template-columns: repeat(2, 49%);
-    column-gap: 2%;
-  }
-}
 body {
   background-color: #f5f6fa;
 }
@@ -87,6 +72,32 @@ section .products .product-item img {
 }
 .product-button:hover {
   background-color: rgb(46.2343096234, 128.5041841004, 33.9958158996);
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+  section .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
+  .products {
+    display: block !important;
+    margin-top: 2em;
+  }
+  .product-item {
+    margin-bottom: 36px;
+  }
+  .product-item h4 {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
